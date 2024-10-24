@@ -55,7 +55,7 @@ Proje iki zorluk aşamalı,
 
 1.  **İterasyon 1**: ilk önce asgari yeterli ürün (IT1-Minimum Viable Product) aşamasına getirmeyi hedeflemelisin.
 2.  **Iterasyon 2**: İleri düzey görevlere eadece ama sadece, tasarımdaki IT1 kilometre taşına geldikten sonra başlamalısın. Buradaki gelişmiş görsel ve teknik problemleri çözmeyi IT1 sonrasında, aşağıda belirtilen sırada çözerek ilerlemelisin.
-3.  Projenin iki aşamasının da gerekli görselleri proje klasöründe var. Ayrıca [**Figma Formatında**](https://www.figma.com/file/q0xPW5uCel3rdzFgpjR9lt/S7-Challange-Revize) formatındaki tasarıma bu adresten erişebilirsiniz.
+3.  Projenin iki aşamasının da gerekli görselleri proje klasöründe var. Ayrıca [**Figma Formatında**](https://www.figma.com/design/q0xPW5uCel3rdzFgpjR9lt/S8-Pizza-React-Challange-v2.1) formatındaki tasarıma bu adresten erişebilirsiniz.
 
 ## Aşama 1: Proje Kurulumu ve İterasyon 1
 
