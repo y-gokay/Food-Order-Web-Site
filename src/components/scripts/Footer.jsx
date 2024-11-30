@@ -4,7 +4,6 @@ const Footer = (props) => {
   return (
     <header>
       <h1>Teknolojik Yemekler</h1>
-      {/*En son statik hale getirilecek*/}
     </header>
   );
 };

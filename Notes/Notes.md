@@ -19,6 +19,8 @@ Barlow
 Quattrocento
 Satisfy
 
+CSS CheatSheet
+
 1. Box Model (Kutular)
    width: Elemanın genişliğini ayarlar.
    height: Elemanın yüksekliğini ayarlar.
