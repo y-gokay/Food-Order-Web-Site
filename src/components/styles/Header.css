@@ -1,0 +1,43 @@
+.custom-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  gap: 20px;
+  background-color: #ce2829;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.custom-header img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}

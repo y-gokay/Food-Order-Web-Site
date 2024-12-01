@@ -17,10 +17,23 @@
   max-width: 80%;
   width: 100%;
 }
-
-.home-container h1,
-.home-container h2 {
+.fırsat {
+  font-family: "Satisfy", cursive;
+  color: #fdc913;
+}
+.title {
   color: white;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 70px;
+  font-family: "Barlow", cursive;
+}
+
+.title::before {
+  content: "KOD ACIKTIRIR, \A PİZZA DOYURUR";
+  white-space: pre-line;
+  display: block;
 }
 
 .home-button {
@@ -45,6 +58,7 @@
     padding-bottom: 50%;
   }
   .home-container h1 {
+    font-family: "Barlow", cursive;
     font-size: 3rem;
   }
 

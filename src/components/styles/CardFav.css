@@ -1,0 +1,53 @@
+.card-fav-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+.card-item {
+  width: 30%;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-item:hover {
+  transform: translateY(-10px);
+}
+
+.card-item-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card-item-title {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-item-rating {
+  font-size: 1rem;
+  color: #ff5e57;
+}
+
+.card-item-pricing {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-item-reviews {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}

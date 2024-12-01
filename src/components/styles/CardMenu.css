@@ -1,0 +1,43 @@
+.card-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+}
+
+.card-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-item h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Barlow", cursive;
+}
+
+.card-item .flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

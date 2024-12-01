@@ -3,11 +3,14 @@ import "../styles/Header.css";
 
 const Header = (props) => {
   return (
-    <header>
-      <div className="logo">
-        <div>
-          <img src="/Assets/Iteration-1-assets/logo.svg" alt="" />
-          <p className="info">Anasayfa-Sipariş oluştur</p>
+    <header className="custom-header">
+      <div className="logo-container">
+        <div className="logo-info">
+          <img
+            src="/Assets/Iteration-1-assets/logo.svg"
+            alt="Logo"
+            className="logo-img"
+          />
         </div>
       </div>
     </header>

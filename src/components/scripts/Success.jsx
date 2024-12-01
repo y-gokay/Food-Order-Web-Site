@@ -2,18 +2,22 @@ import React from "react";
 import "../styles/Success.css";
 import Header from "./Header";
 import { useLocation } from "react-router-dom";
+import Footer from "./Footer.jsx";
 
 const Success = () => {
   const location = useLocation();
   const { form } = location.state || { form: { pathname: "/" } };
   return (
-    <>
+    <div className="success">
       <Header></Header>
-
-      <div className="success-container">
-        <img src="/Assets/Iteration-2-assets/icons/3.svg" alt="" />
-
-        <h1>Başarıyla Sipariş Verildi!</h1>
+      <div className="success-container ">
+        <div className="successinfo">
+          <p className="lezzetYolda">Lezzetin Yolda</p>
+          <h1>Siparişin Alındı</h1>
+        </div>
+        <h4>
+          <strong>Position Absolute Pizza</strong>
+        </h4>
         <p>
           Boyut:<strong> {form.boyut}</strong>
         </p>
@@ -22,16 +26,27 @@ const Success = () => {
         </p>
         <p>
           Ekstra Malzemeler:
-          <strong>{form.malzemeler.join("\n")}</strong>
+          <strong className="ekstraMalzemeler">
+            {form.malzemeler.join(", ")}
+          </strong>
         </p>
         <p>
           Sipariş Notu:<strong> {form.siparisNotu}</strong>
         </p>
-        <p>
-          Fiyat:<strong> {form.toplamTutar}</strong>
-        </p>
+        <div className="toplamSiparisler">
+          <p>Sipariş Toplamı</p>
+          <div className="tutarlar">
+            <p>Seçimler:</p>
+            <p>{form.ekstraTutar || "0.00"} ₺</p>
+          </div>
+          <div className="tutarlar">
+            <p>Fiyat:</p>
+            <p>{form.toplamTutar || "0.00"} ₺</p>
+          </div>
+        </div>
       </div>
-    </>
+      <Footer></Footer>
+    </div>
   );
 };
 

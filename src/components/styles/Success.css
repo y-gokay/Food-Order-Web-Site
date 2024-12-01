@@ -1,0 +1,130 @@
+.success {
+  background-color: #ce2829;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lezzetYolda {
+  font-family: "Satisfy", cursive;
+  color: #fdc913;
+}
+
+.success-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.success-container h1 {
+  font-family: "Roboto", cursive;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.success-container h4 {
+  font-family: "Barlow", cursive;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.success-container p {
+  font-family: "Barlow", cursive;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.success-container p strong {
+  font-family: "Barlow", cursive;
+  color: white;
+}
+
+.successinfo {
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.toplamSiparisler {
+  border: 2px solid white;
+  color: white;
+  font-family: "Barlow", cursive;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.toplamSiparisler p {
+  margin: 10px 0;
+}
+
+.toplamSiparisler p strong {
+  color: white;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #777;
+}
+.toplamSiparisler {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tutarlar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.tutarlar p {
+  margin: 0;
+  font-family: "Barlow", cursive;
+  font-size: 18px;
+}
+
+.tutarlar p:first-child {
+  text-align: left;
+  flex: 1;
+}
+
+.tutarlar p:last-child {
+  text-align: right;
+  color: white;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .success-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .success-container h1 {
+    font-size: 28px;
+  }
+
+  .success-container h4 {
+    font-size: 20px;
+  }
+
+  .success-container p {
+    font-size: 16px;
+  }
+}
