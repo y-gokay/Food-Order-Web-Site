@@ -1,40 +1,28 @@
-/* Genel Ayarlar */
-.container7 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #ffffff;
-}
 h1,
 h2 {
   text-align: center;
   color: #333;
 }
+
 .flex {
   display: flex;
 }
+
 .column {
   flex-direction: column;
 }
+
 .positionCenterStart {
   align-items: center;
   justify-content: flex-start;
 }
-.gap-l {
-  gap: 20px;
-}
-.gap-s {
-  gap: 10px;
-}
-.gap-xs {
-  gap: 5px;
-}
+
 .display-flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .order-container {
   display: flex;
   flex-direction: column;
@@ -44,6 +32,7 @@ h2 {
   border-radius: 8px;
   background-color: #f9f9f9;
 }
+
 .info-container {
   display: flex;
   flex-direction: column;
@@ -53,27 +42,32 @@ h2 {
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
 .bannerImg {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
 .size-crust-row {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 30px;
 }
+
 .size-container,
 .crust-container {
   display: flex;
   flex-direction: column;
   width: 48%;
 }
+
 .size-container h2,
 .crust-container h2 {
   margin-bottom: 15px;
 }
+
 .mats-container,
 .nots-container,
 .amount-container,
@@ -81,23 +75,54 @@ h2 {
   width: 100%;
   margin-bottom: 30px;
 }
+
 .amount-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
 }
+
+.toppings-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.topping-item {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.topping-item input {
+  display: none;
+}
+
+.topping-item.selected {
+  background-color: #ffc107;
+}
+
+.topping-item:hover {
+  background-color: #e0e0e0;
+}
+
 .price-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-bottom: 25px;
   padding: 25px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
 }
+
 .amount-container button {
   padding: 10px 20px;
   font-size: 24px;
@@ -105,78 +130,108 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .amount-container button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
 .price-container {
   text-align: left;
   font-size: 20px;
   color: #333;
 }
+
 .underline {
   border-bottom: 1px solid #ccc;
   margin-bottom: 30px;
 }
+
 .order-text {
   text-align: left;
 }
+
 .error {
-  color: red;
+  color: #ce2829;
   font-size: 16px;
   margin-top: 8px;
 }
+
 .anasayfa {
   color: #333;
-  font-weight: bold;
-  margin-bottom: 15px;
+  cursor: pointer;
 }
+
 .siparis {
-  color: #007bff;
+  color: #ce2829;
+  font-weight: bold;
 }
+
 .priceText {
   font-size: 28px;
   color: #28a745;
   margin-bottom: 15px;
 }
+
 .orderButton {
   background-color: #fdc913;
-  color: white;
+  color: #292929;
   border: none;
   padding: 10px 20px;
   font-size: 24px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Barlow", cursive;
 }
+
 .orderButton:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+.orderInfo {
+  margin-bottom: 15px;
+}
+
 .price-box div {
   margin-bottom: 12px;
+}
+.toplamSiparis {
+  color: #292929;
+}
+.Seçimler {
+  color: #5f5f5f;
+}
+.Toplam {
+  color: #ce2829;
 }
 @media (max-width: 768px) {
   .order-container {
     width: 95%;
     margin: 20px auto;
   }
+
   .size-crust-row {
     flex-direction: column;
   }
+
   .size-container,
   .crust-container {
     width: 100%;
   }
+
   .price-box {
     width: 100%;
   }
+
   .amount-container button {
     padding: 8px 15px;
     font-size: 20px;
   }
+
   .price-container {
     font-size: 18px;
   }
+
   .priceText {
     font-size: 24px;
   }

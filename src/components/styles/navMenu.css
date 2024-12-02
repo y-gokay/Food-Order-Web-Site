@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: white;
+  background-color: #faf7f2;
 }
 
 .navmenu-list {
@@ -21,7 +21,7 @@
 
 .navmenu-link {
   text-decoration: none;
-  color: black;
+  color: #292929;
   font-size: 16px;
   display: flex;
 

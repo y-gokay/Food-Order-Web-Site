@@ -5,17 +5,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: #faf7f2;
   padding-left: 0;
   padding-right: 0;
 }
 
 .lezzetYolda {
-  font-family: "Satisfy", cursive;
   color: #fdc913;
+  font-family: "Satisfy", cursive;
 }
 
-.success-container {
+.success-container,
+.success-infocontainer {
   margin: 0 auto;
   max-width: 800px;
   padding: 20px;
@@ -26,35 +27,35 @@
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: white;
+  color: #faf7f2;
 }
 
-.success-container h4 {
+.success-infocontainer h4 {
   font-family: "Barlow", cursive;
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-.success-container p {
+.success-infocontainer p {
   font-family: "Barlow", cursive;
   font-size: 18px;
   margin: 10px 0;
 }
 
-.success-container p strong {
+.success-infocontainer p strong {
   font-family: "Barlow", cursive;
-  color: white;
+  color: #faf7f2;
 }
 
 .successinfo {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #faf7f2;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
 .toplamSiparisler {
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #faf7f2;
+  color: #faf7f2;
   font-family: "Barlow", cursive;
   border-radius: 10px;
   padding: 20px;
@@ -67,7 +68,7 @@
 }
 
 .toplamSiparisler p strong {
-  color: white;
+  color: #faf7f2;
 }
 
 footer {
@@ -76,7 +77,7 @@ footer {
   color: #777;
 }
 .toplamSiparisler {
-  border: 2px solid white;
+  border: 2px solid #faf7f2;
   border-radius: 10px;
   padding: 10px 20px;
   margin-top: 20px;
@@ -106,7 +107,7 @@ footer {
 
 .tutarlar p:last-child {
   text-align: right;
-  color: white;
+  color: #faf7f2;
   flex: 1;
 }
 

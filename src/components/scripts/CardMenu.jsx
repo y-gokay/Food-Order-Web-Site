@@ -8,6 +8,10 @@ const CardMenu = () => {
   return (
     <div className="card-menu-container">
       <CardAdvert />
+      <div>
+        <p className="cardMenuText1">En çok Paketlenen Menüler</p>
+        <p className="cardMenuText2">Acıktıran Kodlara Doyuran Lezzetler</p>
+      </div>
       <NavMenu />
       <CardFav />
     </div>

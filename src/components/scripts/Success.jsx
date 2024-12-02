@@ -10,29 +10,31 @@ const Success = () => {
   return (
     <div className="success">
       <Header></Header>
-      <div className="success-container ">
+      <div className="success-container">
         <div className="successinfo">
           <p className="lezzetYolda">Lezzetin Yolda</p>
           <h1>Siparişin Alındı</h1>
         </div>
-        <h4>
-          <strong>Position Absolute Pizza</strong>
-        </h4>
-        <p>
-          Boyut:<strong> {form.boyut}</strong>
-        </p>
-        <p>
-          Hamur:<strong> {form.hamur}</strong>
-        </p>
-        <p>
-          Ekstra Malzemeler:
-          <strong className="ekstraMalzemeler">
-            {form.malzemeler.join(", ")}
-          </strong>
-        </p>
-        <p>
-          Sipariş Notu:<strong> {form.siparisNotu}</strong>
-        </p>
+        <div className="success-infocontainer">
+          <h4>
+            <strong>Position Absolute Pizza</strong>
+          </h4>
+          <p>
+            Boyut:<strong> {form.boyut}</strong>
+          </p>
+          <p>
+            Hamur:<strong> {form.hamur}</strong>
+          </p>
+          <p>
+            Ekstra Malzemeler:
+            <strong className="ekstraMalzemeler">
+              {form.malzemeler.join(", ")}
+            </strong>
+          </p>
+          <p>
+            Sipariş Notu:<strong> {form.siparisNotu}</strong>
+          </p>
+        </div>
         <div className="toplamSiparisler">
           <p>Sipariş Toplamı</p>
           <div className="tutarlar">

@@ -13,7 +13,7 @@
 
 .content {
   text-align: center;
-  color: white;
+  color: #faf7f2;
   max-width: 80%;
   width: 100%;
 }
@@ -22,7 +22,7 @@
   color: #fdc913;
 }
 .title {
-  color: white;
+  color: #faf7f2;
   white-space: nowrap;
   overflow-wrap: break-word;
   word-wrap: break-word;

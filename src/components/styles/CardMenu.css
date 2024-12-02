@@ -4,14 +4,14 @@
   gap: 2rem;
   padding: 2rem;
   margin: 0 auto;
-  background-color: white;
+  background-color: #faf7f2;
 }
 
 .card-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #faf7f2;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,11 +33,26 @@
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: "Barlow", cursive;
+  font-family: "Barlow";
 }
 
 .card-item .flex {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.cardMenuText1 {
+  text-align: center;
+  color: #ce2829;
+  font-family: "Satisfy";
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.cardMenuText2 {
+  text-align: center;
+  color: #292929;
+  font-family: "Barlow";
+  font-size: 2rem;
 }
