@@ -12,12 +12,13 @@ import {
 } from "reactstrap";
 import axios from "axios";
 import "../styles/OrderForm.css";
-import { boyutlar, hamurlar, malzemeler } from "../data/pizzaData";
+import { boyutlar, hamurlar, malzemeler } from "../data/pizzaData"; //orderFormda kullanılacak verileri import eder
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import bannerImg from "../../../Assets/Iteration-2-aseets/pictures/form-banner.png";
 
 const OrderForm = () => {
+  //Siparis bilgileri tutar ve useState ile set eder
   const [form, setForm] = useState({
     boyut: "",
     hamur: "",
@@ -27,7 +28,7 @@ const OrderForm = () => {
     ekstraTutar: 0,
     toplamTutar: 0,
   });
-
+  //Error bilgileri  tutar ve useState ile set eder
   const [error, setError] = useState({
     boyutHata: "",
     hamurHata: "",
@@ -38,7 +39,7 @@ const OrderForm = () => {
 
   const history = useHistory();
 
-  // Fiyat hesaplama
+  // Fiyat hesaplama işlemleri yapılır ve useEffect ile set edilir
   useEffect(() => {
     const boyutEkstra =
       form.boyut === "Orta (+5₺)" ? 5 : form.boyut === "Büyük (+10₺)" ? 10 : 0;
@@ -58,6 +59,7 @@ const OrderForm = () => {
     }));
   }, [form.boyut, form.hamur, form.adet, form.malzemeler]);
 
+  // Inputlardaki değişiklikleri takip eder ve set eder
   const handleChange = (event) => {
     const { name, value, checked, type } = event.target;
 
@@ -83,6 +85,7 @@ const OrderForm = () => {
     }
   };
 
+  // Adet arttırma ve azaltma işlemleri yapılır
   const handleAdetChange = (type) => {
     if (type === "arttir" && form.adet < 10) {
       setForm((prevForm) => ({ ...prevForm, adet: prevForm.adet + 1 }));
@@ -91,6 +94,7 @@ const OrderForm = () => {
     }
   };
 
+  // Sipariş verme işleminde koşullar sağlanıyorsa post işlemini yaoar
   const handleClick = () => {
     setError({
       ...error,
@@ -112,10 +116,12 @@ const OrderForm = () => {
     }
   };
 
+  // Anasayfaya yönlendirme işlemi yapar
   const handleSubmit = () => {
     history.push("/");
   };
 
+  //Header ve Footer componentlerini çağırır ve orderForm kısmıyla beraber return eder
   return (
     <div>
       <Header />

@@ -4,25 +4,6 @@ h2 {
   color: #333;
 }
 
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.positionCenterStart {
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.display-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .order-container {
   display: flex;
   flex-direction: column;
@@ -206,8 +187,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .order-container {
-    width: 95%;
-    margin: 20px auto;
+    width: 75%;
   }
 
   .size-crust-row {

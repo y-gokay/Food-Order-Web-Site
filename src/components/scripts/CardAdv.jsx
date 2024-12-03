@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/CardAdv.css";
 
 const CardAdv = () => {
+  //cardAdv önerilen ürünlerini return eder
+  //buranın css yazmak en keyifsiz en zor en isteksiz iş olduğunu düşünüyorum
   return (
     <div className="card-adv-container">
       <div className="adv-item-img-container">

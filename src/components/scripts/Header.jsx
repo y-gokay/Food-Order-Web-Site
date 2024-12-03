@@ -4,9 +4,11 @@ import "../styles/Header.css";
 
 const Header = (props) => {
   const history = useHistory();
+  //Anasayfaya push etme işlemi
   const handleSubmit = () => {
     history.push("/");
   };
+  //Header Componentı ve görsele tıklayınca anasayfaya yönlendirir
   return (
     <header className="custom-header">
       <div className="logo-container">

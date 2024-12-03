@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/CardFav.css";
 
 const CardFav = () => {
+  //cardFav component favori ürüleri gösteren bir component
   return (
     <div className="card-fav-container">
       <div className="card-item card-item-1">

@@ -9,11 +9,11 @@ import Header from "./Header.jsx";
 
 const Home = () => {
   const history = useHistory();
-
+  // Tıklanınca order sayfasına yönlendirme yapacak fonksiyon
   const handleClick = () => {
     history.push("/order");
   };
-
+  // Anasayfa main herosunun header fotter cardMenu ve navMenuden oluşan componentlerını return eder
   return (
     <>
       <Header></Header>

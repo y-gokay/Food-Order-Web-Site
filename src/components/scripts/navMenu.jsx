@@ -9,6 +9,7 @@ import fastIcon from "../../../Assets/Iteration-2-aseets/icons/5.svg";
 import softIcon from "../../../Assets/Iteration-2-aseets/icons/6.svg";
 
 const NavMenu = () => {
+  //navMenu componentı ve yönlendirme işlemlerr
   return (
     <div className="navmenu-container">
       <ul className="navmenu-list">

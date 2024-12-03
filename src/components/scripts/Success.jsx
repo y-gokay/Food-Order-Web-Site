@@ -8,6 +8,8 @@ const Success = () => {
   const location = useLocation();
   const { form } = location.state || { form: { pathname: "/" } };
   return (
+    /*Sipariş başarılı bir şekilde onaylandığından kullanıcaya siparişinin onaylandığını ve s
+    ipariş bilgilerini gösteren header footer componentını ve success sayfasını return eder */
     <div className="success">
       <Header></Header>
       <div className="success-container">

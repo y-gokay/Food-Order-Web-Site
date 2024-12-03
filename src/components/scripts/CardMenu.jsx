@@ -5,6 +5,7 @@ import NavMenu from "./NavMenu.jsx";
 import "../styles/CardMenu.css";
 
 const CardMenu = () => {
+  //CardMenu componenti cardAdv cardFav ve navMenü componentlerini çağırır ve text ekler
   return (
     <div className="card-menu-container">
       <CardAdvert />

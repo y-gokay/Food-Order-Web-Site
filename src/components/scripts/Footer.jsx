@@ -3,6 +3,7 @@ import "../styles/Footer.css";
 import footerBadge from "../../../Assets/Iteration-2-aseets/footer/logo-footer.png";
 
 const Footer = () => {
+  //Footer componenti daha sonra içersine dinamik bir şekilde çalışması için yönlendirmeler eklenebilir
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -36,15 +37,16 @@ const Footer = () => {
         </div>
 
         <div className="footer-menu">
-          <h3>Sıccacık Menüü</h3>
+          <h3>Hot Menüü</h3>
           <p>
             <br />
-            Terminal Pizza,
+            Terminal Pizza
             <br />
-            Tavuklu Pizza,
-            <br /> Beyaz Console,
-            <br /> Frosty Testler Geçti,
-            <br /> Mutlu Burger
+            5 Kişilik Hachkathlon Pizza
+            <br /> Beyaz Console Frosty
+            <br /> Frosty Testler Geçti
+            <br /> useEffect Tavuklu Pizza
+            <br /> Position Absoulute Acı Burger
           </p>
         </div>
 

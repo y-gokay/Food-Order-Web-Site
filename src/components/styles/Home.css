@@ -27,7 +27,7 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   font-size: 70px;
-  font-family: "Barlow", cursive;
+  font-family: "Roboto", cursive;
 }
 
 .title::before {
@@ -41,6 +41,7 @@
   padding: 0.75rem 2rem;
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: "Barlow", cursive;
   border: none;
   border-radius: 0.5rem;
   background-color: #fdc913;
@@ -58,7 +59,6 @@
     padding-bottom: 50%;
   }
   .home-container h1 {
-    font-family: "Barlow", cursive;
     font-size: 3rem;
   }
 
