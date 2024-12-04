@@ -19,7 +19,9 @@ const Success = () => {
         </div>
         <div className="success-infocontainer">
           <h4>
-            <strong>Position Absolute Pizza</strong>
+            <strong>
+              <span>{form.adet} x </span>Position Absolute Pizza
+            </strong>
           </h4>
           <p>
             Boyut:<strong> {form.boyut}</strong>
@@ -27,15 +29,25 @@ const Success = () => {
           <p>
             Hamur:<strong> {form.hamur}</strong>
           </p>
+          {form.malzemeler.length > 0 && (
+            <p>
+              Ekstra Malzemeler:
+              <strong data-cy="mats" className="ekstraMalzemeler">
+                {form.malzemeler.join(", ")}
+              </strong>
+            </p>
+          )}
           <p>
-            Ekstra Malzemeler:
-            <strong data-cy="mats" className="ekstraMalzemeler">
-              {form.malzemeler.join(", ")}
+            Ad Soyad:
+            <strong data-cy="name" className="nameSurname">
+              {form.isimSoyisim}
             </strong>
           </p>
-          <p>
-            Sipariş Notu:<strong data-cy="notes"> {form.siparisNotu}</strong>
-          </p>
+          {form.siparisNotu !== "" && (
+            <p>
+              Sipariş Notu:<strong data-cy="notes"> {form.siparisNotu}</strong>
+            </p>
+          )}
         </div>
         <div className="toplamSiparisler">
           <p>Sipariş Toplamı</p>

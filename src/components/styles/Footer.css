@@ -8,7 +8,7 @@
 
 .footer-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
   max-width: 1200px;
@@ -29,13 +29,6 @@
   gap: 10px;
 }
 
-.footer-icon1,
-.footer-icon2,
-.footer-icon3 {
-  max-width: 30px;
-  height: auto;
-}
-
 .footer-logo p {
   font-family: "Barlow", cursive;
   margin: 0;
@@ -45,38 +38,43 @@
 }
 
 .footer-menu {
-  flex: 1;
-  min-width: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
 }
 
 .footer-menu h3 {
   font-family: "Barlow", cursive;
   font-size: 18px;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .footer-menu p {
   margin: 0;
   font-family: "Barlow", cursive;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
+  color: #ddd;
+  text-align: left;
 }
 
 .footer-instagram {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   flex: 1;
-  min-width: 250px;
+  align-items: center;
 }
 
 .footer-instagram h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 15px;
-  text-align: center;
   font-family: "Barlow", cursive;
+  color: #fff;
 }
 
 .insta-images {
@@ -85,21 +83,46 @@
   gap: 10px;
 }
 
+ol,
+ul {
+  padding-left: 0;
+}
+
 .footer-bottom {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 15px;
+  color: #ddd;
+  border-top: 1px solid #444;
+  padding-top: 20px;
 }
 
-.footer a {
-  text-decoration: none;
-  color: #fdc913;
-  font-weight: bold;
+.fa-twitter {
+  color: #1da1f2;
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.fa-facebook {
+  color: #3b5998;
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.fa-instagram {
+  color: #e4405f;
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
-.footer a:hover {
-  color: #fdc913;
+.footer-bottom p {
+  margin: 0;
+  font-family: "Barlow", cursive;
 }
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -122,30 +145,43 @@
   }
 
   .footer-logo p {
+    font-size: 14px;
+  }
+
+  .footer-menu h3,
+  .footer-instagram h3 {
+    font-size: 16px;
+  }
+
+  .footer-menu p {
+    font-size: 14px;
+  }
+
+  .insta-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .fa-twitter {
+    color: #1da1f2;
+    float: right;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .fa-facebook {
+    color: #3b5998;
+    float: right;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .fa-instagram {
+    color: #e4405f;
+    float: right;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .footer-bottom {
     font-size: 12px;
-
-    .footer-menu h3,
-    .footer-instagram h3 {
-      font-size: 16px;
-    }
-
-    .footer-menu p {
-      font-size: 12px;
-    }
-
-    .insta-images {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-    }
-
-    .insta-images img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .footer-bottom {
-      font-size: 12px;
-      margin-top: 10px;
-    }
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

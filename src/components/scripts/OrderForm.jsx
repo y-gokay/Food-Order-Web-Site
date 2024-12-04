@@ -27,6 +27,7 @@ const OrderForm = () => {
     adet: 1,
     ekstraTutar: 0,
     toplamTutar: 0,
+    isimSoyisim: "",
   });
   //Error bilgileri  tutar ve useState ile set eder
   const [error, setError] = useState({
@@ -35,6 +36,7 @@ const OrderForm = () => {
     siparisNotuHata: "",
     adetHata: "",
     malzemelerHata: "",
+    isimSoyisimHata: "",
   });
 
   const history = useHistory();
@@ -96,13 +98,25 @@ const OrderForm = () => {
 
   // Sipariş verme işleminde koşullar sağlanıyorsa post işlemini yaoar
   const handleClick = () => {
+    const nameRegex = /^[a-zA-Z\sığüşöçİĞÜŞÖÇ]+$/;
+
     setError({
       ...error,
       boyutHata: form.boyut === "" ? "Lütfen boyut belirtiniz." : "",
       hamurHata: form.hamur === "" ? "Lütfen hamur belirtiniz." : "",
+      isimSoyisimHata:
+        form.isimSoyisim === ""
+          ? "Lütfen isim ve soyisim giriniz."
+          : !nameRegex.test(form.isimSoyisim)
+          ? "İsim ve soyisim sadece harf içerebilir."
+          : "",
     });
-
-    if (form.boyut && form.hamur) {
+    if (
+      form.boyut !== "" &&
+      form.hamur !== "" &&
+      form.isimSoyisim !== "" &&
+      nameRegex.test(form.isimSoyisim)
+    ) {
       axios
         .post("https://reqres.in/api/pizza", form)
         .then((response) => {
@@ -240,6 +254,24 @@ const OrderForm = () => {
           )}
         </FormGroup>
 
+        <FormGroup className="name-container">
+          <Label for="isimSoyisim">Ad Soyad</Label>
+          <Input
+            type="text"
+            name="isimSoyisim"
+            id="isimSoyisim"
+            placeholder="İsim Soyisim"
+            value={form.isimSoyisim}
+            onChange={handleChange}
+            data-cy="name-container"
+          />
+          {error.isimSoyisimHata && (
+            <p data-cy="err" className="error">
+              {error.isimSoyisimHata}
+            </p>
+          )}
+        </FormGroup>
+
         <FormGroup className="nots-container">
           <Label for="siparisNotu">Sipariş Notu</Label>
           <Input
@@ -260,7 +292,7 @@ const OrderForm = () => {
 
         <div className="underline"></div>
 
-        <div className="price-container">
+        <FormGroup className="price-container">
           <FormGroup className="amount-container">
             <Button
               className="orderButton"
@@ -294,7 +326,7 @@ const OrderForm = () => {
               SİPARİŞ VER
             </Button>
           </div>
-        </div>
+        </FormGroup>
       </Container>
 
       <Footer />

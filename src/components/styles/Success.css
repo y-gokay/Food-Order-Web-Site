@@ -13,6 +13,8 @@
 .lezzetYolda {
   color: #fdc913;
   font-family: "Satisfy", cursive;
+  font-size: 1.3rem;
+  margin: 0 auto;
 }
 
 .success-container,
@@ -24,9 +26,9 @@
 
 .success-container h1 {
   font-family: "Roboto", cursive;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #faf7f2;
 }
 
@@ -50,6 +52,7 @@
 .successinfo {
   border-bottom: 2px solid #faf7f2;
   padding-bottom: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .toplamSiparisler {
@@ -112,6 +115,6 @@
   }
 
   .success-container p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }

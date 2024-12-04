@@ -58,10 +58,7 @@ h2 {
 
 .toppings-list {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* 3 adet column oluşturulmasını sağlıyormuş*/
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 

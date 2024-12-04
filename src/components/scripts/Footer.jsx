@@ -92,10 +92,12 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
       <div className="footer-bottom">
         <p>© 2023 Teknolojik Yemekler. Tüm hakları saklıdır.</p>
       </div>
+      <i className="fa-brands fa-twitter"></i>
+      <i className="fa-brands fa-instagram"></i>
+      <i className="fa-brands fa-facebook"></i>
     </footer>
   );
 };
