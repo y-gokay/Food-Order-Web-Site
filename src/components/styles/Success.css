@@ -52,15 +52,18 @@
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-
 .toplamSiparisler {
   border: 2px solid #faf7f2;
   color: #faf7f2;
   font-family: "Barlow", cursive;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px 20px;
   margin-top: 20px;
+  max-width: 500px;
+  margin: 20px auto;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .toplamSiparisler p {
@@ -75,16 +78,6 @@ footer {
   margin-top: 40px;
   font-size: 16px;
   color: #777;
-}
-.toplamSiparisler {
-  border: 2px solid #faf7f2;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-top: 20px;
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .tutarlar {
