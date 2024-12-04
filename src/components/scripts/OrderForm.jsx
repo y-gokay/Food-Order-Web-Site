@@ -128,10 +128,10 @@ const OrderForm = () => {
 
       <Container className="order-container">
         <FormGroup className="info-container">
-          <Col md={6}>
+          <FormGroup>
             <img src={bannerImg} alt="bannerImg" className="bannerImg" />
-          </Col>
-          <Col md={6} className="order-text">
+          </FormGroup>
+          <FormGroup className="order-text">
             <div className="orderInfo">
               <span className="anasayfa" onClick={handleSubmit}>
                 Anasayfa -
@@ -152,11 +152,11 @@ const OrderForm = () => {
               İtalyan kökenli lezzetli bir yemektir. . Küçük bir pizzaya bazen
               pizzetta denir.
             </p>
-          </Col>
+          </FormGroup>
         </FormGroup>
 
         <FormGroup className="size-crust-row">
-          <Col md={6}>
+          <FormGroup>
             <FormGroup>
               <h2>Boyut Seç</h2>
               <p>Orta Boy 5₺ - Büyük Boy 10 ₺ ücret alınır </p>
@@ -174,8 +174,8 @@ const OrderForm = () => {
               ))}
               {error.boyutHata && <p className="error">{error.boyutHata}</p>}
             </FormGroup>
-          </Col>
-          <Col md={6}>
+          </FormGroup>
+          <FormGroup>
             <FormGroup>
               <h2>Hamur Seç</h2>
               <p>İnce ve Kalın Hamur seçimlerinde ekstra 5₺ ücret alınır</p>
@@ -196,7 +196,7 @@ const OrderForm = () => {
               </Input>
               {error.hamurHata && <p className="error">{error.hamurHata}</p>}
             </FormGroup>
-          </Col>
+          </FormGroup>
         </FormGroup>
 
         <FormGroup className="mats-container">
