@@ -77,7 +77,7 @@ const OrderForm = () => {
       setForm({ ...form, [name]: value });
     }
 
-    if (form.malzemeler.length >= 10) {
+    if (form.malzemeler.length >= 9) {
       setError((prevError) => ({
         ...prevError,
         malzemelerHata: "En fazla 10 malzeme seçebilirsiniz.",
@@ -168,11 +168,16 @@ const OrderForm = () => {
                     value={boyut}
                     checked={form.boyut === boyut}
                     onChange={handleChange}
+                    data-cy="choose-size"
                   />
                   {boyut}
                 </Label>
               ))}
-              {error.boyutHata && <p className="error">{error.boyutHata}</p>}
+              {error.boyutHata && (
+                <p data-cy="err" className="error">
+                  {error.boyutHata}
+                </p>
+              )}
             </FormGroup>
           </FormGroup>
           <FormGroup>
@@ -184,6 +189,7 @@ const OrderForm = () => {
                 name="hamur"
                 value={form.hamur}
                 onChange={handleChange}
+                data-cy="choose-crust"
               >
                 <option value="" disabled>
                   Hamur Seçiniz
@@ -194,7 +200,11 @@ const OrderForm = () => {
                   </option>
                 ))}
               </Input>
-              {error.hamurHata && <p className="error">{error.hamurHata}</p>}
+              {error.hamurHata && (
+                <p data-cy="err" className="error">
+                  {error.hamurHata}
+                </p>
+              )}
             </FormGroup>
           </FormGroup>
         </FormGroup>
@@ -204,12 +214,8 @@ const OrderForm = () => {
           <p>En fazla 10 malzeme seçebilirsiniz. 5₺</p>
           <div className="toppings-list">
             {malzemeler.map((malzeme, ind) => (
-              <label
-                key={ind}
-                className={`topping-item ${
-                  form.malzemeler.includes(malzeme) ? "selected" : ""
-                }`}
-              >
+              <label key={ind} className="topping-item">
+                {malzeme}
                 <input
                   type="checkbox"
                   name="malzemeler"
@@ -220,13 +226,17 @@ const OrderForm = () => {
                     !form.malzemeler.includes(malzeme)
                   }
                   onChange={handleChange}
+                  data-cy={`check-${ind}`}
                 />
-                {malzeme}
+                <span className="checkmark" />
               </label>
             ))}
           </div>
+
           {error.malzemelerHata && (
-            <p className="error">{error.malzemelerHata}</p>
+            <p data-cy="err" className="error">
+              {error.malzemelerHata}
+            </p>
           )}
         </FormGroup>
 
@@ -239,9 +249,12 @@ const OrderForm = () => {
             placeholder="Siparişine eklemek istediğin bir not var mı?"
             value={form.siparisNotu}
             onChange={handleChange}
+            data-cy="nots-container"
           />
           {error.siparisNotuHata && (
-            <p className="error">{error.siparisNotuHata}</p>
+            <p data-cy="err" className="error">
+              {error.siparisNotuHata}
+            </p>
           )}
         </FormGroup>
 
@@ -251,15 +264,19 @@ const OrderForm = () => {
           <FormGroup className="amount-container">
             <Button
               className="orderButton"
+              data-cy="down-count-button"
               disabled={form.adet <= 1}
               onClick={() => handleAdetChange("azalt")}
             >
               —
             </Button>
-            <Label className="mx-3">{form.adet}</Label>
+            <Label data-cy="count" className="count">
+              {form.adet}
+            </Label>
             <Button
               disabled={form.adet >= 10}
               onClick={() => handleAdetChange("arttir")}
+              data-cy="up-count-button"
               className="orderButton"
             >
               ＋
@@ -269,7 +286,11 @@ const OrderForm = () => {
             <div className="toplamSiparis">Sipariş Toplamı</div>
             <div className="Seçimler">Seçimler: {form.ekstraTutar} ₺</div>
             <div className="Toplam">Toplam: {form.toplamTutar} ₺</div>
-            <Button onClick={handleClick} className="orderButton">
+            <Button
+              onClick={handleClick}
+              data-cy="order-button"
+              className="orderButton"
+            >
               SİPARİŞ VER
             </Button>
           </div>

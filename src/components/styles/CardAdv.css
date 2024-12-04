@@ -43,7 +43,6 @@
   left: 50%;
   transform: translate(-90%, -70%);
   color: white;
-  text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -124,7 +123,7 @@
 .order-btn-1:hover,
 .order-btn-2:hover,
 .order-btn-3:hover {
-  background-color: #ffbf00;
+  background-color: #fdc913;
 }
 
 .adv-item-span {
@@ -153,7 +152,7 @@
   }
 
   .adv-item-description-1 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .order-btn-1,

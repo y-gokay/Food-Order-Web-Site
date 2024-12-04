@@ -28,12 +28,12 @@
   margin-top: 0.5rem;
   font-size: 1.3rem;
   font-weight: bold;
-  color: #333;
+  color: #292929;
 }
 
 .card-item-rating {
   font-size: 1rem;
-  color: #ff5e57;
+  color: #ce2829;
 }
 
 .card-item-pricing {
@@ -43,13 +43,13 @@
 
 .card-item-reviews {
   font-size: 1rem;
-  color: #555;
+  color: #5f5f5f;
 }
 
 .card-item-price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #292929;
 }
 @media (max-width: 768px) {
   .card-fav-container {

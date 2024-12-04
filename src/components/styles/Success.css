@@ -73,12 +73,6 @@
   color: #faf7f2;
 }
 
-footer {
-  margin-top: 40px;
-  font-size: 16px;
-  color: #777;
-}
-
 .tutarlar {
   display: flex;
   justify-content: space-between;

@@ -29,23 +29,23 @@ const Success = () => {
           </p>
           <p>
             Ekstra Malzemeler:
-            <strong className="ekstraMalzemeler">
+            <strong data-cy="mats" className="ekstraMalzemeler">
               {form.malzemeler.join(", ")}
             </strong>
           </p>
           <p>
-            Sipariş Notu:<strong> {form.siparisNotu}</strong>
+            Sipariş Notu:<strong data-cy="notes"> {form.siparisNotu}</strong>
           </p>
         </div>
         <div className="toplamSiparisler">
           <p>Sipariş Toplamı</p>
           <div className="tutarlar">
             <p>Seçimler:</p>
-            <p>{form.ekstraTutar || "0.00"} ₺</p>
+            <p data-cy="extras">{form.ekstraTutar || "0.00"} ₺</p>
           </div>
           <div className="tutarlar">
             <p>Fiyat:</p>
-            <p>{form.toplamTutar || "0.00"} ₺</p>
+            <p data-cy="orderPrice">{form.toplamTutar || "0.00"} ₺</p>
           </div>
         </div>
       </div>

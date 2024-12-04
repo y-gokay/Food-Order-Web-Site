@@ -1,7 +1,7 @@
 h1,
 h2 {
   text-align: center;
-  color: #333;
+  color: #292929;
 }
 
 .order-container {
@@ -56,51 +56,86 @@ h2 {
   margin-bottom: 30px;
 }
 
+.toppings-list {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* 3 adet column oluşturulmasını sağlıyormuş*/
+  gap: 10px;
+}
+
+.topping-item {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.topping-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.topping-item .checkmark {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.topping-item:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.topping-item input:checked ~ .checkmark {
+  background-color: #fdc913;
+}
+
+.topping-item .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.topping-item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.topping-item .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.nots-container textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .amount-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-}
-
-.toppings-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.topping-item {
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.topping-item input {
-  display: none;
-}
-
-.topping-item.selected {
-  background-color: #ffc107;
-}
-
-.topping-item:hover {
-  background-color: #e0e0e0;
-}
-
-.price-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 25px;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 100%;
-  margin-bottom: 25px;
 }
 
 .amount-container button {
@@ -121,6 +156,19 @@ h2 {
   margin-bottom: 30px;
 }
 
+.price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 25px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
 .order-text {
   text-align: left;
 }
@@ -129,16 +177,6 @@ h2 {
   color: #ce2829;
   font-size: 16px;
   margin-top: 8px;
-}
-
-.anasayfa {
-  color: #333;
-  cursor: pointer;
-}
-
-.siparis {
-  color: #ce2829;
-  font-weight: bold;
 }
 
 .priceText {
@@ -163,8 +201,13 @@ h2 {
   cursor: not-allowed;
 }
 
-.orderInfo {
-  margin-bottom: 15px;
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .price-box div {
@@ -183,13 +226,14 @@ h2 {
   color: #ce2829;
 }
 
-.price-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  padding: 15px;
-  border-radius: 8px;
+.anasayfa {
+  color: #333;
+  cursor: pointer;
+}
+
+.siparis {
+  color: #ce2829;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -205,15 +249,6 @@ h2 {
   .size-container,
   .crust-container {
     width: 100%;
-  }
-
-  .toppings-list {
-    gap: 5px;
-  }
-
-  .topping-item {
-    padding: 8px 15px;
-    font-size: 14px;
   }
 
   .price-box {
@@ -246,5 +281,13 @@ h2 {
   .price-container {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .toppings-list {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 3 adet column oluşturulmasını sağlıyormuş*/
+    gap: 10px;
   }
 }

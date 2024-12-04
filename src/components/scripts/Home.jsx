@@ -21,7 +21,11 @@ const Home = () => {
         <div>
           <h2 className="fırsat">fırsatı kaçırma</h2>
           <h1 className="title"></h1>
-          <Button onClick={handleClick} className="home-button">
+          <Button
+            onClick={handleClick}
+            data-cy="home-button"
+            className="home-button"
+          >
             Acıktım
           </Button>
         </div>
