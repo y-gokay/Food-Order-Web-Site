@@ -1,6 +1,6 @@
-export const boyutlar = ["Küçük", "Orta (+5₺)", "Büyük (+10₺)"];
+export const boyutlar = ["S", "M", "L"];
 
-export const hamurlar = ["İnce (+5₺)", "Orta", "Kalın (+5₺)"];
+export const hamurlar = ["İnce", "Orta", "Kalın"];
 
 export const malzemeler = [
   "Pepperoni",

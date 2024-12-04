@@ -175,7 +175,7 @@ const OrderForm = () => {
               <h2>Boyut Seç</h2>
               <p>Orta Boy 5₺ - Büyük Boy 10 ₺ ücret alınır </p>
               {boyutlar.map((boyut, ind) => (
-                <Label key={ind} className="d-block">
+                <Label key={ind} className="sizeRadio">
                   <Input
                     type="radio"
                     name="boyut"
@@ -184,7 +184,7 @@ const OrderForm = () => {
                     onChange={handleChange}
                     data-cy="choose-size"
                   />
-                  {boyut}
+                  <span>{boyut}</span>
                 </Label>
               ))}
               {error.boyutHata && (
