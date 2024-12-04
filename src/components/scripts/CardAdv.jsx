@@ -13,7 +13,10 @@ const CardAdv = () => {
           className="adv-item-img"
         />
         <div className="adv-item-text">
-          <h3 className="adv-item-title">Özel Lezzetus</h3>
+          <h3 className="adv-item-title">
+            Özel <br />
+            Lezzetus
+          </h3>
           <p className="adv-item-description-1">
             Position: Absolute Acı Burger
           </p>
@@ -29,7 +32,7 @@ const CardAdv = () => {
             className="adv-item-img"
           />
           <div className="adv-item-text-1">
-            <h3 className="adv-item-title-2">Hackathlon Burger Menü</h3>
+            <h3 className="adv-item-title-1">Hackathlon Burger Menü</h3>
             <button className="order-btn-2">Sipariş Ver</button>
           </div>
         </div>
@@ -41,7 +44,7 @@ const CardAdv = () => {
             className="adv-item-img"
           />
           <div className="adv-item-text-2">
-            <h3 className="adv-item-title-3">
+            <h3 className="adv-item-title-2">
               <span className="adv-item-span">Çoooook</span> hızlı npm gibi
               kurye
             </h3>

@@ -1,116 +1,179 @@
 .card-adv-container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-}
-
-.adv-item-img-container {
-  padding: 20px;
+  gap: 10px;
   box-sizing: border-box;
-  position: relative;
 }
-.adv-item-img-container-2,
-.adv-item-img-container-3 {
+
+.adv-item-img-container,
+.adv-item-img-container-b {
+  position: relative;
   width: 100%;
-  padding: 10px;
-  position: relative;
-}
-
-.adv-item-img-container-2 {
-  height: 50%;
-}
-
-.adv-item-img-container-3 {
-  height: 50%;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .adv-item-img-container-b {
-  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.adv-item-img {
-  height: auto;
-  border-radius: 8px;
+.adv-item-img-container-2,
+.adv-item-img-container-3 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 }
+
+.adv-item-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: inherit;
+}
+
 .adv-item-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-80%, -60%);
+  transform: translate(-90%, -70%);
   color: white;
-  font-size: 50px;
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.adv-item-title {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-family: " Quattrocento";
+}
+
+.adv-item-description-1 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.order-btn-1 {
+  background-color: white;
+  color: #ce2829;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
 .adv-item-text-1 {
   position: absolute;
   top: 50%;
-  left: 30%;
-  transform: translate(-80%, -60%);
+  left: 50%;
+  transform: translate(-100%, -50%);
   color: white;
-  font-size: 24px;
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .adv-item-text-2 {
   position: absolute;
   top: 50%;
-  left: 30%;
-  transform: translate(-80%, -60%);
-  color: white;
-  font-size: 24px;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.adv-item-title {
-  font-size: 24px;
-  font-weight: bold;
+.adv-item-title-1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 .adv-item-title-2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-.adv-item-title-3 {
-  font-size: 24px;
-  font-weight: bold;
-}
-.adv-item-span {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-.order-btn-1 {
-  background-color: #fdc913;
-  color: #292929;
-  padding: 10px 20px;
-  font-size: 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 .order-btn-2 {
-  background-color: #fdc913;
-  color: #292929;
+  background-color: white;
+  color: #ce2829;
   padding: 10px 20px;
-  font-size: 24px;
+  font-size: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
-}
-.order-btn-3 {
-  background-color: #fdc913;
-  color: #292929;
-  padding: 10px 20px;
-  font-size: 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.order-btn:hover {
+.order-btn-3 {
+  background-color: white;
+  color: #ce2829;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-btn-1:hover,
+.order-btn-2:hover,
+.order-btn-3:hover {
   background-color: #ffbf00;
+}
+
+.adv-item-span {
+  color: #ce2829;
+  font-weight: bold;
+}
+
+@media (max-width: 425px) {
+  .card-adv-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .adv-item-img-container,
+  .adv-item-img-container-b {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .adv-item-img {
+    height: auto;
+  }
+
+  .adv-item-title {
+    font-size: 2.5rem;
+  }
+
+  .adv-item-description-1 {
+    font-size: 0.9rem;
+  }
+
+  .order-btn-1,
+  .order-btn-2,
+  .order-btn-3 {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .adv-item-text-1,
+  .adv-item-text-2 {
+    font-size: 1.5rem;
+  }
+
+  .adv-item-title-1,
+  .adv-item-title-2 {
+    font-size: 1.5rem;
+  }
+
+  .adv-item-span {
+    font-size: 1.5rem;
+  }
 }

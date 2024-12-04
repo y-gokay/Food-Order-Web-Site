@@ -51,8 +51,7 @@ h2 {
 
 .mats-container,
 .nots-container,
-.amount-container,
-.price-container {
+.amount-container {
   width: 100%;
   margin-bottom: 30px;
 }
@@ -96,12 +95,12 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 25px;
   padding: 25px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 .amount-container button {
@@ -115,12 +114,6 @@ h2 {
 .amount-container button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
-}
-
-.price-container {
-  text-align: left;
-  font-size: 20px;
-  color: #333;
 }
 
 .underline {
@@ -150,7 +143,7 @@ h2 {
 
 .priceText {
   font-size: 28px;
-  color: #28a745;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -169,6 +162,7 @@ h2 {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
 .orderInfo {
   margin-bottom: 15px;
 }
@@ -176,22 +170,36 @@ h2 {
 .price-box div {
   margin-bottom: 12px;
 }
+
 .toplamSiparis {
   color: #292929;
 }
+
 .Seçimler {
   color: #5f5f5f;
 }
+
 .Toplam {
   color: #ce2829;
 }
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+}
+
 @media (max-width: 768px) {
   .order-container {
-    width: 75%;
+    width: 90%;
   }
 
   .size-crust-row {
     flex-direction: column;
+    gap: 20px;
   }
 
   .size-container,
@@ -199,20 +207,44 @@ h2 {
     width: 100%;
   }
 
+  .toppings-list {
+    gap: 5px;
+  }
+
+  .topping-item {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
   .price-box {
     width: 100%;
+    padding: 15px;
+  }
+
+  .amount-container {
+    gap: 10px;
   }
 
   .amount-container button {
-    padding: 8px 15px;
     font-size: 20px;
-  }
-
-  .price-container {
-    font-size: 18px;
+    padding: 8px 15px;
   }
 
   .priceText {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .orderButton {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .orderInfo {
+    margin-bottom: 10px;
+  }
+
+  .price-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

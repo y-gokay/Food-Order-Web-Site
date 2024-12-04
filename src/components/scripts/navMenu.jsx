@@ -16,7 +16,7 @@ const NavMenu = () => {
         <li className="navmenu-item">
           <Link to="/ramen" className="navmenu-link">
             <img src={ramenIcon} alt="Ramen Icon" className="navmenu-icon" />
-            Ramen
+            YENİ! Ramen
           </Link>
         </li>
         <li className="navmenu-item">
@@ -31,6 +31,7 @@ const NavMenu = () => {
             Burger
           </Link>
         </li>
+
         <li className="navmenu-item">
           <Link to="/french-fries" className="navmenu-link">
             <img

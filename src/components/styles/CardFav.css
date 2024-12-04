@@ -51,3 +51,33 @@
   font-weight: bold;
   color: #333;
 }
+@media (max-width: 768px) {
+  .card-fav-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .card-item {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card-item-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-item-title {
+    font-size: 1.1rem;
+  }
+
+  .card-item-price {
+    font-size: 1rem;
+  }
+
+  .card-item-rating,
+  .card-item-reviews {
+    font-size: 0.9rem;
+  }
+}

@@ -43,10 +43,10 @@ const OrderForm = () => {
   useEffect(() => {
     const boyutEkstra =
       form.boyut === "Orta (+5₺)" ? 5 : form.boyut === "Büyük (+10₺)" ? 10 : 0;
-    console.log(boyutEkstra + "+" + form.boyut);
+
     const hamurEkstra =
       form.hamur === "İnce (+5₺)" || form.hamur === "Kalın (+5₺)" ? 5 : 0;
-    console.log(hamurEkstra + "-  " + form.hamur);
+
     const malzemeEkstra = form.malzemeler.length * 5;
     const ekstraTutar = form.adet * (boyutEkstra + hamurEkstra + malzemeEkstra);
 
@@ -127,7 +127,7 @@ const OrderForm = () => {
       <Header />
 
       <Container className="order-container">
-        <Row className="info-container">
+        <FormGroup className="info-container">
           <Col md={6}>
             <img src={bannerImg} alt="bannerImg" className="bannerImg" />
           </Col>
@@ -153,9 +153,9 @@ const OrderForm = () => {
               pizzetta denir.
             </p>
           </Col>
-        </Row>
+        </FormGroup>
 
-        <Row className="size-crust-row">
+        <FormGroup className="size-crust-row">
           <Col md={6}>
             <FormGroup>
               <h2>Boyut Seç</h2>
@@ -197,7 +197,7 @@ const OrderForm = () => {
               {error.hamurHata && <p className="error">{error.hamurHata}</p>}
             </FormGroup>
           </Col>
-        </Row>
+        </FormGroup>
 
         <FormGroup className="mats-container">
           <h2>Ek Malzemeler</h2>
@@ -247,8 +247,8 @@ const OrderForm = () => {
 
         <div className="underline"></div>
 
-        <div className="d-flex justify-content-between align-items-start">
-          <FormGroup className="d-flex align-items-center amount-container">
+        <div className="price-container">
+          <FormGroup className="amount-container">
             <Button
               className="orderButton"
               disabled={form.adet <= 1}

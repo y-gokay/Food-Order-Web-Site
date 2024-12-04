@@ -46,7 +46,7 @@
   }
 
   .navmenu-list {
-    gap: 15px;
+    gap: 25px;
   }
 
   .navmenu-icon {
@@ -59,7 +59,16 @@
   }
 }
 @media (max-width: 425px) {
+  .navmenu-container {
+    padding: 10px 20px 10px 20px;
+  }
   .navmenu-list {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .navmenu-item {
+    width: 40%;
   }
 }
