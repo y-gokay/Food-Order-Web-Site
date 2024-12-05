@@ -44,7 +44,7 @@ const CardFav = () => {
       </div>
 
       <div className="card-item card-item-3">
-        <Link>
+        <Link to="">
           <img
             src="Assets/Iteration-2-aseets/pictures/food-3.png"
             alt="food-3"
