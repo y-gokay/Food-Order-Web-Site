@@ -1,7 +1,13 @@
-import React from "react";
+import { useHistory } from "react-router-dom";
 import "../styles/CardAdv.css";
 
 const CardAdv = () => {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push("/order");
+  };
+
   //cardAdv önerilen ürünlerini return eder
   //buranın css yazmak en keyifsiz en zor en isteksiz iş olduğunu düşünüyorum
   return (
@@ -20,7 +26,9 @@ const CardAdv = () => {
           <p className="adv-item-description-1">
             Position: Absolute Acı Burger
           </p>
-          <button className="order-btn-1">Sipariş Ver</button>
+          <button className="order-btn-1" onClick={handleClick}>
+            Sipariş Ver
+          </button>
         </div>
       </div>
 
@@ -33,7 +41,9 @@ const CardAdv = () => {
           />
           <div className="adv-item-text-1">
             <h3 className="adv-item-title-1">Hackathlon Burger Menü</h3>
-            <button className="order-btn-2">Sipariş Ver</button>
+            <button className="order-btn-2" onClick={""}>
+              Sipariş Ver
+            </button>
           </div>
         </div>
 
@@ -48,7 +58,9 @@ const CardAdv = () => {
               <span className="adv-item-span">Çoooook</span> hızlı npm gibi
               kurye
             </h3>
-            <button className="order-btn-3">Sipariş Ver</button>
+            <button className="order-btn-3" onClick={""}>
+              Sipariş Ver
+            </button>
           </div>
         </div>
       </div>

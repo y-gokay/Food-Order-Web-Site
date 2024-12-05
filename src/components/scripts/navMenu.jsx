@@ -14,26 +14,26 @@ const NavMenu = () => {
     <div className="navmenu-container">
       <ul className="navmenu-list">
         <li className="navmenu-item">
-          <Link to="/ramen" className="navmenu-link">
+          <Link to="" className="navmenu-link">
             <img src={ramenIcon} alt="Ramen Icon" className="navmenu-icon" />
             YENİ! Ramen
           </Link>
         </li>
         <li className="navmenu-item">
-          <Link to="/pizza" className="navmenu-link">
+          <Link to="/order" className="navmenu-link">
             <img src={pizzaIcon} alt="Pizza Icon" className="navmenu-icon" />
             Pizza
           </Link>
         </li>
         <li className="navmenu-item">
-          <Link to="/burger" className="navmenu-link">
+          <Link to="" className="navmenu-link">
             <img src={burgerIcon} alt="Burger Icon" className="navmenu-icon" />
             Burger
           </Link>
         </li>
 
         <li className="navmenu-item">
-          <Link to="/french-fries" className="navmenu-link">
+          <Link to="" className="navmenu-link">
             <img
               src={frenchIcon}
               alt="French Fries Icon"
@@ -43,13 +43,13 @@ const NavMenu = () => {
           </Link>
         </li>
         <li className="navmenu-item">
-          <Link to="/fast-food" className="navmenu-link">
+          <Link to="" className="navmenu-link">
             <img src={fastIcon} alt="Fast Food Icon" className="navmenu-icon" />
             Fast Food
           </Link>
         </li>
         <li className="navmenu-item">
-          <Link to="/soft-drinks" className="navmenu-link">
+          <Link to="" className="navmenu-link">
             <img
               src={softIcon}
               alt="Soft Drinks Icon"

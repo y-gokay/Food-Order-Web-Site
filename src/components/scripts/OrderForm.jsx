@@ -152,11 +152,13 @@ const OrderForm = () => {
               </span>
               <span className="siparis"> Sipariş Oluştur</span>
             </div>
-            <h2>Position Absolute Acı Pizza</h2>
-            <h3 className="priceText">85.50 ₺</h3>
-            <p>
-              4.2 <span>(200)</span>
-            </p>
+            <h2 className="headTitle">Position Absolute Acı Pizza</h2>
+            <div className="textCont">
+              <h3 className="priceText">85.50 ₺</h3>
+              <p>
+                <span>4.2</span>(200)
+              </p>
+            </div>
             <p>
               Frontent Dev olarak hala position:absolute kullanıyorsan bu çok
               acı pizza tam sana göre. Pizza, domates, peynir ve genellikle
@@ -172,21 +174,25 @@ const OrderForm = () => {
         <FormGroup className="size-crust-row">
           <FormGroup>
             <FormGroup>
-              <h2>Boyut Seç</h2>
-              <p>Orta Boy 5₺ - Büyük Boy 10 ₺ ücret alınır </p>
-              {boyutlar.map((boyut, ind) => (
-                <Label key={ind} className="sizeRadio">
-                  <Input
-                    type="radio"
-                    name="boyut"
-                    value={boyut}
-                    checked={form.boyut === boyut}
-                    onChange={handleChange}
-                    data-cy="choose-size"
-                  />
-                  <span>{boyut}</span>
-                </Label>
-              ))}
+              <div className="sizeInfoContainer">
+                <h2>Boyut Seç</h2>
+                <p>Orta Boy 5₺ - Büyük Boy 10 ₺ ücret alınır </p>
+              </div>
+              <div className="buttonContainer">
+                {boyutlar.map((boyut, ind) => (
+                  <Label key={ind} className="sizeRadio">
+                    <Input
+                      type="radio"
+                      name="boyut"
+                      value={boyut}
+                      checked={form.boyut === boyut}
+                      onChange={handleChange}
+                      data-cy="choose-size"
+                    />
+                    <span>{boyut}</span>
+                  </Label>
+                ))}
+              </div>
               {error.boyutHata && (
                 <p data-cy="err" className="error">
                   {error.boyutHata}
@@ -196,24 +202,28 @@ const OrderForm = () => {
           </FormGroup>
           <FormGroup>
             <FormGroup>
-              <h2>Hamur Seç</h2>
-              <p>İnce ve Kalın Hamur seçimlerinde ekstra 5₺ ücret alınır</p>
-              <Input
-                type="select"
-                name="hamur"
-                value={form.hamur}
-                onChange={handleChange}
-                data-cy="choose-crust"
-              >
-                <option value="" disabled>
-                  Hamur Seçiniz
-                </option>
-                {hamurlar.map((hamur, ind) => (
-                  <option key={ind} value={hamur}>
-                    {hamur}
+              <div className="crustInfoContainer">
+                <h2>Hamur Seç</h2>
+                <p>İnce ve Kalın Hamur seçimlerinde ekstra 5₺ ücret alınır</p>
+              </div>
+              <div className="buttonContainer">
+                <Input
+                  type="select"
+                  name="hamur"
+                  value={form.hamur}
+                  onChange={handleChange}
+                  data-cy="choose-crust"
+                >
+                  <option value="" disabled>
+                    Hamur Seçiniz
                   </option>
-                ))}
-              </Input>
+                  {hamurlar.map((hamur, ind) => (
+                    <option key={ind} value={hamur}>
+                      {hamur}
+                    </option>
+                  ))}
+                </Input>
+              </div>
               {error.hamurHata && (
                 <p data-cy="err" className="error">
                   {error.hamurHata}

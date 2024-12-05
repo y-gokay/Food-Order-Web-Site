@@ -5,6 +5,13 @@
   font-family: Arial, sans-serif;
   margin-top: 0;
 }
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: #ce2829 underline;
+}
 
 .footer-container {
   display: flex;
@@ -65,7 +72,6 @@
 .footer-instagram {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   flex: 1;
   align-items: center;
 }

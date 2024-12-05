@@ -58,7 +58,34 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
-
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sizeInfoContainer {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.crustInfoContainer {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.textCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  color: #292929;
+}
 .sizeRadio input:checked + span {
   background-color: #fdc913;
   border-color: #999;
