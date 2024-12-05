@@ -41,7 +41,7 @@ const CardAdv = () => {
           />
           <div className="adv-item-text-1">
             <h3 className="adv-item-title-1">Hackathlon Burger Menü</h3>
-            <button className="order-btn-2" onClick={""}>
+            <button className="order-btn-2" onClick={handleClick}>
               Sipariş Ver
             </button>
           </div>
@@ -58,7 +58,7 @@ const CardAdv = () => {
               <span className="adv-item-span">Çoooook</span> hızlı npm gibi
               kurye
             </h3>
-            <button className="order-btn-3" onClick={""}>
+            <button className="order-btn-3" onClick={handleClick}>
               Sipariş Ver
             </button>
           </div>
