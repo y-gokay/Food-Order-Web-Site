@@ -238,9 +238,9 @@ const OrderForm = () => {
           <p>En fazla 10 malzeme seçebilirsiniz. 5₺</p>
           <div className="toppings-list">
             {malzemeler.map((malzeme, ind) => (
-              <label key={ind} className="topping-item">
+              <Label key={ind} className="topping-item">
                 {malzeme}
-                <input
+                <Input
                   type="checkbox"
                   name="malzemeler"
                   value={malzeme}
@@ -253,7 +253,7 @@ const OrderForm = () => {
                   data-cy={`check-${ind}`}
                 />
                 <span className="checkmark" />
-              </label>
+              </Label>
             ))}
           </div>
 
