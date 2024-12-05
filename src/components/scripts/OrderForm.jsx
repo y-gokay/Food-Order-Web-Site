@@ -172,35 +172,34 @@ const OrderForm = () => {
         </FormGroup>
 
         <FormGroup className="size-crust-row">
-          <FormGroup>
-            <FormGroup>
-              <div className="sizeInfoContainer">
-                <h2>Boyut Seç</h2>
-                <p>Orta Boy 5₺ - Büyük Boy 10 ₺ ücret alınır </p>
-              </div>
-              <div className="buttonContainer">
-                {boyutlar.map((boyut, ind) => (
-                  <Label key={ind} className="sizeRadio">
-                    <Input
-                      type="radio"
-                      name="boyut"
-                      value={boyut}
-                      checked={form.boyut === boyut}
-                      onChange={handleChange}
-                      data-cy="choose-size"
-                    />
-                    <span>{boyut}</span>
-                  </Label>
-                ))}
-              </div>
-              {error.boyutHata && (
-                <p data-cy="err" className="error">
-                  {error.boyutHata}
-                </p>
-              )}
-            </FormGroup>
+          <FormGroup className="size-side">
+            <div className="sizeInfoContainer">
+              <h2>Boyut Seç</h2>
+              <p>Orta Boy 5₺ - Büyük Boy 10 ₺ ücret alınır </p>
+            </div>
+            <div className="buttonContainer">
+              {boyutlar.map((boyut, ind) => (
+                <Label key={ind} className="sizeRadio">
+                  <Input
+                    type="radio"
+                    name="boyut"
+                    value={boyut}
+                    checked={form.boyut === boyut}
+                    onChange={handleChange}
+                    data-cy="choose-size"
+                  />
+                  <span>{boyut}</span>
+                </Label>
+              ))}
+            </div>
+            {error.boyutHata && (
+              <p data-cy="err" className="error">
+                {error.boyutHata}
+              </p>
+            )}
           </FormGroup>
-          <FormGroup>
+
+          <FormGroup className="crust-side">
             <FormGroup>
               <div className="crustInfoContainer">
                 <h2>Hamur Seç</h2>
@@ -324,7 +323,7 @@ const OrderForm = () => {
               ＋
             </Button>
           </FormGroup>
-          <div className="price-box">
+          <FormGroup className="price-box">
             <div className="toplamSiparis">Sipariş Toplamı</div>
             <div className="Seçimler">Seçimler: {form.ekstraTutar} ₺</div>
             <div className="Toplam">Toplam: {form.toplamTutar} ₺</div>
@@ -335,7 +334,7 @@ const OrderForm = () => {
             >
               SİPARİŞ VER
             </Button>
-          </div>
+          </FormGroup>
         </FormGroup>
       </Container>
 
