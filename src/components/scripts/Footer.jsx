@@ -17,7 +17,7 @@ const Footer = () => {
               src="Assets/Iteration-2-aseets/footer/icons/icon-1.png"
               alt="footer-icon1"
             />
-            <Link>
+            <Link to="">
               <p>341 Londonderry Road, Istanbul Türkiye</p>
             </Link>
           </div>
@@ -41,29 +41,29 @@ const Footer = () => {
 
         <div className="footer-menu">
           <h3>Hot Menüü</h3>
-          <Link>
+          <Link to="">
             <p>Terminal Pizza</p>
           </Link>
-          <Link>
+          <Link to="">
             <p>5 Kişilik Hachkathlon Pizza</p>
           </Link>
-          <Link>
+          <Link to="">
             <p>Beyaz Console Frosty</p>
           </Link>
-          <Link>
+          <Link to="">
             <p>Frosty Testler Geçti</p>
           </Link>
-          <Link>
+          <Link to="">
             <p>useEffect Tavuklu Pizza</p>
           </Link>
-          <Link>
+          <Link to="">
             <p>Position Absoulute Acı Burger</p>
           </Link>
         </div>
 
         <div className="footer-instagram">
           <h3>Instagram</h3>
-          <Link className="insta-images">
+          <Link className="insta-images" to="">
             <ul>
               <img
                 src="Assets\Iteration-2-aseets\footer\insta\li-0.png"
@@ -106,13 +106,13 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>© 2023 Teknolojik Yemekler. Tüm hakları saklıdır.</p>
       </div>
-      <Link>
+      <Link to="">
         <i className="fa-brands fa-twitter"></i>
       </Link>
-      <Link>
+      <Link to="">
         <i className="fa-brands fa-instagram"></i>
       </Link>
-      <Link>
+      <Link to="">
         <i className="fa-brands fa-facebook"></i>
       </Link>
     </footer>
