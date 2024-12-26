@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/NavMenu.css";
+import "../styles/navMenu.css";
 import ramenIcon from "../../../Assets/Iteration-2-aseets/icons/1.svg";
 import pizzaIcon from "../../../Assets/Iteration-2-aseets/icons/2.svg";
 import burgerIcon from "../../../Assets/Iteration-2-aseets/icons/3.svg";
@@ -8,7 +8,7 @@ import frenchIcon from "../../../Assets/Iteration-2-aseets/icons/4.svg";
 import fastIcon from "../../../Assets/Iteration-2-aseets/icons/5.svg";
 import softIcon from "../../../Assets/Iteration-2-aseets/icons/6.svg";
 
-const NavMenu = () => {
+const navMenu = () => {
   //navMenu componentı ve yönlendirme işlemlerr
   return (
     <div className="navmenu-container">
@@ -63,4 +63,4 @@ const NavMenu = () => {
   );
 };
 
-export default NavMenu;
+export default navMenu;
