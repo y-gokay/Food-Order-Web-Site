@@ -1,7 +1,7 @@
 import React from "react";
 import CardAdvert from "./CardAdv.jsx";
 import CardFav from "./CardFav.jsx";
-import NavMenu from "./NavMenu.jsx";
+import NavMenu from "./navMenu.jsx";
 import "../styles/CardMenu.css";
 
 const CardMenu = () => {
