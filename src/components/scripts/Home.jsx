@@ -4,7 +4,7 @@ import { Button } from "reactstrap";
 import "../styles/Home.css";
 import Footer from "./Footer.jsx";
 import CardMenu from "./CardMenu.jsx";
-import NavMenu from "./NavMenu.jsx";
+import NavMenu from "../scripts/NavMenu.jsx";
 import Header from "./Header.jsx";
 
 const Home = () => {
