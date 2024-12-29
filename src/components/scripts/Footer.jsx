@@ -2,6 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 import footerBadge from "../../../Assets/Iteration-2-aseets/footer/logo-footer.png";
+import insta1 from "../../../Assets/Iteration-2-aseets/footer/insta/li-0.png";
+import insta2 from "../../../Assets/Iteration-2-aseets/footer/insta/li-1.png";
+import insta3 from "../../../Assets/Iteration-2-aseets/footer/insta/li-2.png";
+import insta4 from "../../../Assets/Iteration-2-aseets/footer/insta/li-3.png";
+import insta5 from "../../../Assets/Iteration-2-aseets/footer/insta/li-4.png";
+import insta6 from "../../../Assets/Iteration-2-aseets/footer/insta/li-5.png";
+import footerImg from "../../../Assets/Iteration-2-aseets/footer/icons/icon-1.png";
+import footerImg2 from "../../../Assets/Iteration-2-aseets/footer/icons/icon-2.png";
+import footerImg3 from "../../../Assets/Iteration-2-aseets/footer/icons/icon-3.png";
 
 const Footer = () => {
   //Footer componenti daha sonra içersine dinamik bir şekilde çalışması için yönlendirmeler eklenebilir
@@ -13,28 +22,19 @@ const Footer = () => {
             <img src={footerBadge} alt="" />
           </Link>
           <div>
-            <img
-              src="Assets/Iteration-2-aseets/footer/icons/icon-1.png"
-              alt="footer-icon1"
-            />
+            <img src={footerImg} alt="footer-icon1" />
             <Link to="">
               <p>341 Londonderry Road, Istanbul Türkiye</p>
             </Link>
           </div>
 
           <div>
-            <img
-              src="Assets/Iteration-2-aseets/footer/icons/icon-2.png"
-              alt="footer-icon2"
-            />
+            <img src={footerImg2} alt="footer-icon2" />
             <p>aciktim@teknolojikyemekler.com</p>
           </div>
 
           <div>
-            <img
-              src="Assets/Iteration-2-aseets/footer/icons/icon-3.png"
-              alt="footer-icon3"
-            />
+            <img src={footerImg3} alt="footer-icon3" />
             <p>+90 216 123 45 67</p>
           </div>
         </div>
@@ -65,40 +65,22 @@ const Footer = () => {
           <h3>Instagram</h3>
           <Link className="insta-images" to="">
             <ul>
-              <img
-                src="Assets\Iteration-2-aseets\footer\insta\li-0.png"
-                alt="Instagram 1"
-              />
+              <img src={insta1} alt="Instagram 1" />
             </ul>
             <ul>
-              <img
-                src="Assets\Iteration-2-aseets\footer\insta\li-1.png"
-                alt="Instagram 2"
-              />
+              <img src={insta2} alt="Instagram 2" />
             </ul>
             <ul>
-              <img
-                src="Assets\Iteration-2-aseets\footer\insta\li-2.png"
-                alt="Instagram 3"
-              />
+              <img src={insta3} alt="Instagram 3" />
             </ul>
             <ul>
-              <img
-                src="Assets\Iteration-2-aseets\footer\insta\li-3.png"
-                alt="Instagram 4"
-              />
+              <img src={insta4} alt="Instagram 4" />
             </ul>
             <ul>
-              <img
-                src="Assets\Iteration-2-aseets\footer\insta\li-4.png"
-                alt="Instagram 5"
-              />
+              <img src={insta5} alt="Instagram 5" />
             </ul>
             <ul>
-              <img
-                src="Assets\Iteration-2-aseets\footer\insta\li-5.png"
-                alt="Instagram 6"
-              />
+              <img src={insta6} alt="Instagram 6" />
             </ul>
           </Link>
         </div>
