@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/CardFav.css";
+import cardFav1 from "../../Assets/Iteration-2-aseets/pictures/food-1.png";
+import cardFav2 from "../../Assets/Iteration-2-aseets/pictures/food-2.png";
+import cardFav3 from "../../Assets/Iteration-2-aseets/pictures/food-3.png";
 
 const CardFav = () => {
   //cardFav component favori ürüleri gösteren bir component
@@ -8,11 +11,7 @@ const CardFav = () => {
     <div className="card-fav-container">
       <div className="card-item card-item-1">
         <Link to="/order">
-          <img
-            src="Assets/Iteration-2-aseets/pictures/food-1.png"
-            alt="food-1"
-            className="card-item-img"
-          />
+          <img src={cardFav1} alt="food-1" className="card-item-img" />
         </Link>
         <h3 className="card-item-title">Terminal Pizza</h3>
         <div className="card-item-details">
@@ -26,11 +25,7 @@ const CardFav = () => {
 
       <div className="card-item card-item-2">
         <Link to="/order">
-          <img
-            src="Assets/Iteration-2-aseets/pictures/food-2.png"
-            alt="food-2"
-            className="card-item-img"
-          />
+          <img src={cardFav2} alt="food-2" className="card-item-img" />
         </Link>
 
         <h3 className="card-item-title">Position Absolute Acı Pizza</h3>
@@ -45,11 +40,7 @@ const CardFav = () => {
 
       <div className="card-item card-item-3">
         <Link to="">
-          <img
-            src="Assets/Iteration-2-aseets/pictures/food-3.png"
-            alt="food-3"
-            className="card-item-img"
-          />
+          <img src={cardFav3} alt="food-3" className="card-item-img" />
         </Link>
         <h3 className="card-item-title">useEffect Tavuklu Burger</h3>
         <div className="card-item-details">
