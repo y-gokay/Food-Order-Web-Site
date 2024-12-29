@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "../styles/Header.css";
+import TeknolojikYemekler from "../../../Assets/Iteration-1-assets/logo.svg";
 
 const Header = (props) => {
   const history = useHistory();
@@ -14,7 +15,7 @@ const Header = (props) => {
       <div className="logo-container">
         <div className="logo-info">
           <img
-            src="/Assets/Iteration-1-assets/logo.svg"
+            src={TeknolojikYemekler}
             alt="Logo"
             className="logo-img"
             onClick={handleSubmit}
