@@ -1,5 +1,8 @@
 import { useHistory } from "react-router-dom";
 import "../styles/CardAdv.css";
+import cardAdv1 from "../../../Assets/Iteration-2-aseets/cta/kart-1.png";
+import cardAdv2 from "../../../Assets/Iteration-2-aseets/cta/kart-2.png";
+import cardAdv3 from "../../../Assets/Iteration-2-aseets/cta/kart-3.png";
 
 const CardAdv = () => {
   const history = useHistory();
@@ -13,11 +16,7 @@ const CardAdv = () => {
   return (
     <div className="card-adv-container">
       <div className="adv-item-img-container">
-        <img
-          src="Assets/Iteration-2-aseets/cta/kart-1.png"
-          alt="Özel Lezzetus"
-          className="adv-item-img"
-        />
+        <img src={cardAdv1} alt="Özel Lezzetus" className="adv-item-img" />
         <div className="adv-item-text">
           <h3 className="adv-item-title">
             Özel <br />
@@ -35,7 +34,7 @@ const CardAdv = () => {
       <div className="adv-item-img-container-b">
         <div className="adv-item-img-container-2">
           <img
-            src="Assets/Iteration-2-aseets/cta/kart-2.png"
+            src={cardAdv2}
             alt="Hackathlon Burger Menü"
             className="adv-item-img"
           />
@@ -49,7 +48,7 @@ const CardAdv = () => {
 
         <div className="adv-item-img-container-3">
           <img
-            src="Assets/Iteration-2-aseets/cta/kart-3.png"
+            src={cardAdv3}
             alt="Çoooook hızlı npm gibi kurye"
             className="adv-item-img"
           />
