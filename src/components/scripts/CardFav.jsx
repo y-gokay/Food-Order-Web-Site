@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/CardFav.css";
-import cardFav1 from "../../Assets/Iteration-2-aseets/pictures/food-1.png";
-import cardFav2 from "../../Assets/Iteration-2-aseets/pictures/food-2.png";
-import cardFav3 from "../../Assets/Iteration-2-aseets/pictures/food-3.png";
+import cardFav1 from "../../../Assets/Iteration-2-aseets/pictures/food-1.png";
+import cardFav2 from "../../../Assets/Iteration-2-aseets/pictures/food-2.png";
+import cardFav3 from "../../../Assets/Iteration-2-aseets/pictures/food-3.png";
 
 const CardFav = () => {
   //cardFav component favori ürüleri gösteren bir component
